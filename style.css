@@ -1,0 +1,50 @@
+
+
+
+
+.form-control,
+.form-control:focus {
+    border-radius: 0;
+    background-color:pink;
+    color:green;
+    font-family: 'Courgette';
+}
+
+.form-control:focus {
+    border:blue solid 2px;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: whitesmoke;
+}
+
+.txt {
+    animation: glitch .90s linear infinite;
+    font-size: 50px;
+    color:pink;
+    font-family: 'Arial', Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-violet,
+.btn-violet:hover,
+.btn-violet:active,
+.btn-violet:focus {
+    background-color:pink;
+    border: none;
+    color:black;
+}
+
+@keyframes glitch {
+    2%,
+    100% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
